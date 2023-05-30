@@ -32,7 +32,7 @@ jobs:
       run: dotnet publish Entregable8.csproj -c Release -o release --nologo
     
     - name: Change base-tag in index.html from / to m5_entregable8
-      run: sed -i 's/<base href="\/" \/>/<base href="\/m5_Entregable8\/" \/>/g' release/wwwroot/index.html
+      run: sed -i 's/<base href="\/" \/>/<base href="\/Entregable\/" \/>/g' release/wwwroot/index.html
       
     - name: Add .nojekyll file
       run: touch release/wwwroot/.nojekyll
